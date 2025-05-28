@@ -11,6 +11,9 @@ const tempContainer = document.getElementById("temp-container");
 const windContainer = document.getElementById("wind-container");
 const humidityContainer = document.getElementById("humidity-container");
 const feelsLikeContainer = document.getElementById("feels-like-container");
+const currentYear = document.getElementById("current-year");
+
+currentYear.innerText = new Date().getFullYear();
 
 let bodyHeight = String(docBody.offsetHeight);
 console.log(bodyHeight);

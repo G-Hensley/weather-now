@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WeatherNow</title>
     <link rel="stylesheet" href="https://use.typekit.net/jtg6wqu.css">
-    <link rel="stylesheet" href="output.css">
-    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="../css/output.css">
+    <link rel="stylesheet" href="../css/input.css">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
 </head>
 <body class="flex flex-col min-h-screen">
 
-    <video autoplay muted loop class="absolute -z-10 object-cover w-full" id="background-video">
-        <source src="public/videos/Cloud-bg-clip.mp4" type="video/mp4">
+    <video aria-label="Cloud background video" autoplay muted loop class="absolute -z-10 object-cover w-full" id="background-video">
+        <source src="/public/videos/Cloud-bg-clip.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
     <div id="video-overlay" class="video-overlay min-h-full w-full absolute -z-10 bg-blue-200 opacity-60"></div>
@@ -49,11 +49,11 @@
 
     <footer class="z-0 h-fit mt-3">
         <p class="sticky bottom-0 w-full text-center h-auto" id="copyright">
-            &copy 2024 WeatherNow. All Rights Reserved.
+            &copy <span id="current-year"></span> WeatherNow. All Rights Reserved.
         </p>
     </footer>
 
-    <script src="main.js"></script>
+    <script src="../js/main.js"></script>
 
 </body>
 </html>
